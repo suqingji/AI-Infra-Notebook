@@ -30,9 +30,9 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-//   site: 'https://suqingji.github.io', 
+  site: 'https://suqingji.github.io', 
   
   // 👇 填入你的 GitHub 仓库名 (注意前面必须有斜杠)
   // 如果你的仓库直接叫 你的用户名.github.io，这一行就不需要写！
-//   base: 'https://github.com/suqingji/AI-Infra-Notebook', 
+  base: 'AI-Infra-Notebook', 
 });
