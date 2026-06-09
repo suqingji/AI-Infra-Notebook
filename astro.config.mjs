@@ -7,7 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://suqingji.github.io', 
-  base: 'AI-Infra-Notebook', 
+  base: '/AI-Infra-Notebook', 
   integrations: [
       starlight({
           title: '主页',
@@ -23,6 +23,11 @@ export default defineConfig({
               {
                   label: 'Reference',
                   items: [{ autogenerate: { directory: 'reference' } }],
+              },
+              // 👇 把你的笔记目录加回来 👇
+              {
+                  label: '测试笔记', 
+                  items: [{ autogenerate: { directory: 'test' } }], 
               },
           ],
       }),
