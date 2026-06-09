@@ -171,7 +171,8 @@ export default defineConfig({
                             { label: '第7章-性能分析与Benchmark', slug: 'guides/模块四-推理优化/第7章-性能分析与benchmark' },
                             { label: '第8章-推理优化选型与端到端实战', slug: 'guides/模块四-推理优化/第8章-推理优化选型与端到端实战' },
                         ] 
-                    }
+                    },
+                    { label: '个人笔记', slug: 'guides/个人笔记/cuda编程' },
                 ]
               },
               {
