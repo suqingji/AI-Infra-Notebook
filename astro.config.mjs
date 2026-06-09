@@ -6,6 +6,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://suqingji.github.io', 
+  base: 'AI-Infra-Notebook', 
   integrations: [
       starlight({
           title: '主页',
@@ -30,9 +32,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: 'https://suqingji.github.io', 
-  
-  // 👇 填入你的 GitHub 仓库名 (注意前面必须有斜杠)
-  // 如果你的仓库直接叫 你的用户名.github.io，这一行就不需要写！
-  base: 'AI-Infra-Notebook', 
+
 });
