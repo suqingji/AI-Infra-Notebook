@@ -174,6 +174,12 @@ export default defineConfig({
                     }
                 ]
               },
+              {
+                  label: '数值计算',
+                  items: [
+                        { label: 'BLAS', slug: 'ptesc/blas-lapack/blas的详细教程' },
+                ]
+              }
 
           ],
       }),
