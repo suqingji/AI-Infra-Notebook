@@ -179,7 +179,13 @@ export default defineConfig({
                   items: [
                         { label: 'BLAS', slug: 'ptesc/blas-lapack/blas的详细教程' },
                 ]
-              }
+              },
+              {
+                  label: '机器学习',
+                  items: [
+                        { label: '机器学习', slug: 'machine-learning/机器学习' },
+                ]
+              },
 
           ],
       }),
