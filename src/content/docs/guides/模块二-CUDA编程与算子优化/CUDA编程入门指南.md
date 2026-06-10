@@ -90,6 +90,10 @@ __global__ void myKernel(float* data, int n) {
     }
 }
 
+// __global__ 修饰的函数返回值必须void
+// __global__ void可以交换位置
+// 核函数只能访问自己的GPU内存
+
 // 调用核函数：128 个 Block，每个 Block 256 个线程
 myKernel<<<128, 256>>>(data, n);
 ```
@@ -108,7 +112,7 @@ CUDA 有三种函数修饰符：
 
 CUDA 将线程组织为三层结构，这是理解并行编程的关键。可以把它比喻为"学校 / 班级 / 学生"——Grid 是整个学校，Block 是一个班级，Thread 是班里的每个学生，每个学生独立做自己那份作业，但同一个班级的学生可以通过"黑板"（Shared Memory）互相交流。
 
-<img src="/AIInfraGuide/images/CUDA programming model.png" alt="CUDA programming model" style="max-width: 60%; display: block; margin: 0 auto;" />
+<img src="/AI-Infra-Notebook/images/CUDA programming model.png" alt="CUDA programming model" style="max-width: 60%; display: block; margin: 0 auto;" />
 
 **维度与索引**
 

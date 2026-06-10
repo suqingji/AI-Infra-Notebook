@@ -172,7 +172,13 @@ export default defineConfig({
                             { label: '第8章-推理优化选型与端到端实战', slug: 'guides/模块四-推理优化/第8章-推理优化选型与端到端实战' },
                         ] 
                     },
-                    { label: '个人笔记', slug: 'guides/个人笔记/cuda编程' },
+                    // { label: '个人笔记', slug: 'guides/个人笔记/cuda编程' },
+                    // { label: '个人笔记', href: 'https://ucn6q39653c2.feishu.cn/wiki/XOsxwFl9iiW2CpkWvrQcEyLHnZg', },
+                    { 
+                        label: '个人笔记', 
+                        link: 'https://ucn6q39653c2.feishu.cn/wiki/XOsxwFl9iiW2CpkWvrQcEyLHnZg',
+                        attrs: { target: '_blank' } ,
+                    },
                 ]
               },
               {
