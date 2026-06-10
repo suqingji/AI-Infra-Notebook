@@ -1,0 +1,26 @@
+/* src/styles/custom.css */
+
+/* 只有在屏幕宽度大于 72rem（大电脑屏幕）时才触发调整，
+  这样可以完美避免破坏手机、iPad 等移动端的自适应布局 
+*/
+@media (min-width: 72rem) {
+  :root {
+    /* 1. 撑大整个网页的最大容器边界（默认是 85rem）
+       将其改大，可以把右侧的“当前页目录(ToC)”狠狠推向屏幕最右边 */
+    --sl-page-max-width: 110rem; 
+
+    /* 2. 拓宽中间主要信息列的黄金宽度（默认只有 45rem）
+       将其增加，你的代码块、长表格就会获得巨大的展示空间 */
+    --sl-content-width: 60rem; 
+
+    /* 3. 左侧目录列的宽度保持 Starlight 默认的物理大小（不动） */
+    /* --sl-sidebar-width: 18rem; (这行不改，默认就是原样) */
+  }
+
+  /* 可选优化：让中间的核心主文本区域在超宽屏下也完全铺满 
+    防止 Starlight 默认的左右外边距（Margin）强行让内容在中央缩进
+  */
+  .main-pane {
+    max-width: 100% !important;
+  }
+}

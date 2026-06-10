@@ -9,7 +9,9 @@ import rehypeKatex from 'rehype-katex';
 export default defineConfig({
   site: 'https://suqingji.github.io', 
   base: '/AI-Infra-Notebook', 
-
+  devToolbar: {
+    enabled: false
+  },
   // 👇 2. 告诉 Astro 的 Markdown 解析器使用这两个引擎
   markdown: {
     remarkPlugins: [remarkMath],
@@ -19,7 +21,7 @@ export default defineConfig({
   integrations: [
       starlight({
           title: '主页',
-
+          customCss: ['./src/styles/custom.css'],
           head: [
             {
               tag: 'link',
@@ -193,6 +195,62 @@ export default defineConfig({
                         { label: '机器学习', slug: 'machine-learning/机器学习' },
                 ]
               },
+              {
+                  label: 'Linux',
+                  items: [
+                        { label: '鸟哥的Linux私房菜', link: 'files/《鸟哥的Linux私房菜》.pdf' , attrs: { target: '_blank' }},
+                ]
+              },
+              {
+                  label: '编程语言',
+                  items: [
+                        { 
+                            label: 'Python', 
+                            link: 'https://www.runoob.com/python3/python3-tutorial.html' , 
+                            attrs: { target: '_blank' }
+                        },
+                        { 
+                            label: 'C/C++', 
+                            items:[
+                                {
+                                    label: 'C',
+                                    link: 'https://www.runoob.com/cprogramming/c-tutorial.html',
+                                    attrs: { target: '_blank' }
+                                },
+                                {
+                                    label: 'C++',
+                                    link: 'https://www.runoob.com/cplusplus/cpp-tutorial.html',
+                                    attrs: { target: '_blank' }
+                                }
+                            ]
+                        },
+                ]
+              },
+              {
+                  label: 'AI Agent',
+                  items: [
+                        { 
+                            label: '菜鸟教程AI Agent', 
+                            link: 'https://www.runoob.com/ai-agent/ai-agent-tutorial.html' , 
+                            attrs: { target: '_blank' }
+                        },
+                        // { 
+                        //     label: 'C/C++', 
+                        //     items:[
+                        //         {
+                        //             label: 'C',
+                        //             link: 'https://www.runoob.com/cprogramming/c-tutorial.html',
+                        //         },
+                        //         {
+                        //             label: 'C++',
+                        //             link: 'https://www.runoob.com/cplusplus/cpp-tutorial.html',
+                        //         }
+                        //     ]
+                        // },
+                ]
+              },
+
+              
 
           ],
       }),
