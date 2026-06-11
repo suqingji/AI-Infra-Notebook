@@ -135,6 +135,11 @@ export default defineConfig({
                             { label: '第6章-Attention算子', slug: 'guides/模块二-cuda编程与算子优化/第6章-attention算子' },
                             { label: '第7章-AI编译器', slug: 'guides/模块二-cuda编程与算子优化/第7章-ai编译器' },
                             { label: '第8章-性能分析工具链', slug: 'guides/模块二-cuda编程与算子优化/第8章-性能分析工具链' },
+                            { 
+                                label: "CUDA Programming Guide", 
+                                link: 'https://docs.nvidia.com/cuda/cuda-programming-guide/index.html',
+                                attrs: { target: '_blank' } ,
+                            }
                         ]
                     },
                     { 
