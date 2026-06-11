@@ -21,7 +21,7 @@ export default defineConfig({
   integrations: [
       starlight({
           title: '主页',
-          customCss: ['./src/styles/custom.css'],
+        //   customCss: ['./src/styles/custom.css'],
           head: [
             {
               tag: 'link',

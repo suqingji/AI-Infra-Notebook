@@ -11,7 +11,7 @@
 
     /* 2. 拓宽中间主要信息列的黄金宽度（默认只有 45rem）
        将其增加，你的代码块、长表格就会获得巨大的展示空间 */
-    --sl-content-width: 60rem; 
+    --sl-content-width: 55rem; 
 
     /* 3. 左侧目录列的宽度保持 Starlight 默认的物理大小（不动） */
     /* --sl-sidebar-width: 18rem; (这行不改，默认就是原样) */
